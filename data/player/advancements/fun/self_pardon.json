@@ -1,0 +1,17 @@
+{
+    "parent": "player:fun/self_ban",
+    "display": {
+        "icon": {
+            "item": "chain_command_block"
+        },
+        "title": "原 谅 自 己",
+        "description": "用管理命令解封自己",
+        "frame": "challenge",
+        "hidden": true
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    }
+}

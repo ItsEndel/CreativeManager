@@ -1,0 +1,26 @@
+{
+    "parent": "player:fun/root",
+    "display": {
+        "icon": {
+            "item": "diamond"
+        },
+        "title": "给你钻石！",
+        "description": "给其他玩家一颗钻石"
+    },
+    "criteria": {
+        "diamond": {
+            "trigger": "thrown_item_picked_up_by_entity",
+            "conditions": {
+                "item": {
+                    "item": "diamond"
+                },
+                "entity": {
+                    "type": "player"
+                },
+                "player": {
+                    "type": "player"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "parent": "player:fun/root",
+    "display": {
+        "icon": {
+            "item": "repeating_command_block"
+        },
+        "title": "自 我 封 印",
+        "description": "用管理命令封禁自己",
+        "frame": "challenge",
+        "hidden": true
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    }
+}

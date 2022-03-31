@@ -1,0 +1,33 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{id:\"minecraft:command_block\"}]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{id:\"minecraft:chain_command_block\"}]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{id:\"minecraft:repeating_command_block\"}]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Inventory:[{id:\"minecraft:command_block_minecart\"}]}"
+            }
+        }
+    ]
+}

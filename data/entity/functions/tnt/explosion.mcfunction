@@ -4,4 +4,4 @@ summon creeper ~ ~ ~ {CustomName: '{"text": "被激活的TNT"}', Fuse: 0, Explos
 particle minecraft:cloud ~ ~ ~ 0 0 0 0.2 100
 particle explosion_emitter
 
-#summon area_effect_cloud ~ ~ ~ {Age: 2147483647, Tags: [TntExploded], Particle: "flame"}
+#summon area_effect_cloud ~ ~0.5 ~ {Age: 2147483647, Tags: [TntExploded], Particle: "flame force"}

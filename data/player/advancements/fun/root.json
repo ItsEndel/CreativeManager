@@ -1,0 +1,15 @@
+{
+    "display": {
+        "icon": {
+            "item": "player_head"
+        },
+        "title": "玩家",
+        "description": "玩家间的有趣互动",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    }
+}

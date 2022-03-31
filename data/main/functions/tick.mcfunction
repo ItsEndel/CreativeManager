@@ -1,8 +1,9 @@
 ## 清理临时变量
-#scoreboard players reset * Store
+scoreboard players reset * Store
 ##
 
 ## 调试
+execute as @e[tag=TntExploded] at @s run particle dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1 force
 ##
 
 ## 新玩家检测
@@ -21,8 +22,11 @@ scoreboard players enable @a[scores={OpLevel=0..}] help
 scoreboard players enable @a[scores={OpLevel=0..}] list
 scoreboard players enable @a[scores={OpLevel=0..}] gamemode
 scoreboard players enable @a[scores={OpLevel=0..}] gm
+####
+scoreboard players enable @a[scores={OpLevel=1..}] tp
 #### 管理员命令
 scoreboard players enable @a[scores={OpLevel=3..}] ban
+scoreboard players enable @a[scores={OpLevel=3..}] pardon
 ##
 
 ## 玩家检测
@@ -30,6 +34,8 @@ execute as @a at @s run function player:tick
 ##
 
 ## 实体检测
+#### 密度检测
+execute as @e[type=!#entity:uncensored] at @s run function entity:desity_check
 #### 防止爆炸
 execute as @e[type=tnt] at @s run function entity:tnt/tick
 #execute as @e[type=tnt_minecart] at @s run function entity:tnt_minecart/tick
@@ -40,5 +46,4 @@ execute as @e[type=end_crystal] run function main:void
 
 ## 重置分数
 scoreboard players set @a UseFire 0
-scoreboard players set @a UseEye 0
 ##
