@@ -1,5 +1,5 @@
 ## 传送
-execute at @p[tag=target] run function player:teleport
+execute at @p[tag=target] positioned ~ ~3 ~ run function player:teleport
 
 ## 调试信息
 tellraw @s ["§r已将", {"selector": "@s", "color": "reset"}, "§r传送至", {"selector": "@p[tag=target]", "color": "reset"}]

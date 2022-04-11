@@ -4,6 +4,9 @@ tellraw @s "§r/trigger help [set|add] [页码]     §7显示命令帮助手册"
 tellraw @s "§r/trigger list     §7查看在线玩家列表"
 tellraw @s "§r/trigger gamemode set <模式>     §7切换游戏模式"
 tellraw @s "§r/trigger gm -> /trigger gamemode"
+tellraw @s "§r/trigger gms -> /trigger gamemode set 0"
+tellraw @s "§r/trigger gmc -> /trigger gamemode set 1"
+tellraw @s "§r/trigger gma -> /trigger gamemode set 2"
 tellraw @s ["§a小提示：在输入命令时可以使用 <", {"keybind": "key.playerlist", "color": "green"}, "§a> 键来自动补全命令或参数。"]
 
 ## 调试信息

@@ -1,6 +1,7 @@
 {
     "values": [
         "player",
-        "tnt"
+        "tnt",
+        "item_frame"
     ]
 }

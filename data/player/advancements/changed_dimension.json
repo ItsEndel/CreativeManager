@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "not_overworld": {
+            "trigger": "changed_dimension",
+            "conditions": {
+                "from": "overworld"
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:dimension/changed"
+    }
+}

@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "player:end_portal"
+        "function": "player:dimension/end_portal"
     }
 }

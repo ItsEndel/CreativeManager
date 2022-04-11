@@ -6,7 +6,7 @@ scoreboard objectives add AnnounceTimer dummy "公告计时器"
 scoreboard objectives add System dummy "系统变量"
 scoreboard objectives add Store dummy "临时变量"
 #### 判据
-scoreboard objectives add UseFire used:flint_and_steel "使用打火石"
+scoreboard objectives add UseAnchor used:respawn_anchor "使用重生锚"
 #### 玩家参数
 scoreboard objectives add PID dummy "玩家编号"
 scoreboard objectives add OpLevel dummy "权限等级"
@@ -17,11 +17,21 @@ scoreboard objectives add help trigger "查看帮助"
 scoreboard objectives add list trigger "玩家列表"
 scoreboard objectives add gamemode trigger "游戏模式"
 scoreboard objectives add gm trigger "gamemode"
+scoreboard objectives add gms trigger "gamemode survival"
+scoreboard objectives add gmc trigger "gamemode creative"
+scoreboard objectives add gma trigger "gamemode adventure"
+scoreboard objectives add gmsp trigger "gamemode spectator"
 ######
 scoreboard objectives add tp trigger "传送"
 ###### 管理员指令
 scoreboard objectives add ban trigger "封禁"
 scoreboard objectives add pardon trigger "解封"
+##
+
+## 创建队伍
+team remove player
+team add player
+team modify player seeFriendlyInvisibles true
 ##
 
 ## 创建命令存储
@@ -43,7 +53,7 @@ tellraw @a ""
 tellraw @a "    §b欢迎使用创造服务器管理系统！"
 tellraw @a ""
 tellraw @a "    §a您可以输入§e/trigger help"
-tellraw @a "    §a来查看功能列表！"
+tellraw @a "    §a来查看帮助手册！"
 tellraw @a ""
 tellraw @a "    §7系统作者： ItsEndel"
 tellraw @a ""

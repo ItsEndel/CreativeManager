@@ -8,6 +8,8 @@ tellraw @s "   §b本服已实装防熊系统，"
 tellraw @s "   §b请勿以身试法！"
 tellraw @s ""
 tellraw @s "   §a您可以输入§e/trigger help"
-tellraw @s "   §a来查看功能列表！"
+tellraw @s "   §a来查看帮助手册！"
 tellraw @s ""
 tellraw @s "========================="
+
+say @s broadcasted

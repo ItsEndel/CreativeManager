@@ -1,0 +1,27 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head",
+                    "functions": [
+                        {
+                            "function": "copy_nbt",
+                            "ops": [
+                                {
+                                    "op": "replace",
+                                    "target": "SkullOwner.Name",
+                                    "source": "SelectedItem.tag.title"
+                                }
+                            ],
+                            "source": "this"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

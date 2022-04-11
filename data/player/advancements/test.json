@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "hit": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[ice]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "game:function_here"
+    }
+}
